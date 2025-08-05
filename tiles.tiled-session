@@ -1,0 +1,91 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "assets/mapa.tmx",
+    "expandedProjectPaths": [
+        "js",
+        ".",
+        "assets"
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "#camp": {
+            "dynamicWrapping": false,
+            "scaleInEditor": 1
+        },
+        "#flag": {
+            "dynamicWrapping": true
+        },
+        "#house": {
+            "dynamicWrapping": false,
+            "scaleInEditor": 1
+        },
+        "#mapa": {
+            "dynamicWrapping": false
+        },
+        "#placeForTower": {
+            "dynamicWrapping": true
+        },
+        "#tower": {
+            "dynamicWrapping": true
+        },
+        "assets/mapa.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": -198,
+                "y": 398
+            }
+        },
+        "assets/mapa.tmx#camp": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/mapa.tmx#decoration": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/mapa.tmx#flag": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/mapa.tmx#mapa": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/mapa.tmx#placeForTower": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "assets/mapa.tmx#village": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "frame.defaultDuration": 200,
+    "last.exportedFilePath": "/home/peesousa/College/2025-1/sistemas multimidia/projeto final/tower-defense/assets",
+    "last.imagePath": "/home/peesousa/College/2025-1/sistemas multimidia/projeto final/tower-defense/assets/tilesets/2 Objects",
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "openFiles": [
+        "assets/mapa.tmx"
+    ],
+    "project": "tiles.tiled-project",
+    "property.type": "object",
+    "recentFiles": [
+        "assets/mapa.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.type": 1
+}
