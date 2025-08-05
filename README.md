@@ -32,7 +32,7 @@ Um jogo de Tower Defense desenvolvido com Phaser 3, Node.js e MongoDB, criado co
 
 ## 2. Links Importantes
 
-<!-- * **Link para Jogar (Repl.it):** [COLOQUE AQUI O SEU LINK PÚBLICO DO REPL.IT] -->
+* **Link para Jogar:** [Clique aqui](https://59c232e8-abd4-4743-87c1-3e95203f3152-00-117xgmwn9kz9w.picard.replit.dev:8080/) e veja o jogo em funcionamento.
 
 ---
 
