@@ -1,11 +1,11 @@
-# Game Design Document (GDD): A Defesa da Vila Arqueira
+# Game Design Document & Storyboards
 
-*Este documento foi elaborado como parte da primeira etapa avaliativa do projeto final da disciplina, detalhando a concepção inicial, os elementos visuais e o fluxo de jogo.*
+*Este documento foi elaborado como parte da primeira etapa avaliativa do projeto final da disciplina de Sistemas Multimídia, detalhando a concepção inicial, os elementos visuais e o fluxo de jogo do projeto "Village Defense: A Defesa da Vila Arqueira".*
 
 ---
 
 ### **Grupo de Trabalho**
-* [Pedro Eduardo Lemos Sousa]
+* Pedro Eduardo Lemos Sousa
 
 ---
 
@@ -14,7 +14,7 @@
 **Título:** A Defesa da Vila Arqueira
 
 **Narrativa:**
-Num vale isolado e pacífico, reside uma pequena vila medieval cuja única fama vem da sua incomparável habilidade com o arco e flecha. A vida é tranquila, até que, subitamente, as criaturas que habitam as florestas circundantes começam a atacar os caminhos que levam à vila, corrompidas por uma magia negra e desconhecida.
+Num vale isolado e pacífico, reside uma pequena vila medieval cuja única fama vem da sua incomparável habilidade com o arco e flecha. A vida é tranquila, até que, subitamente, as criaturas que habitam as florestas começam a atacar os caminhos que levam à vila, corrompidas por uma magia negra e desconhecida.
 
 O jogador assume o papel do "Mestre Estratega" da vila, responsável por gerir os recursos e posicionar torres de arqueiros em locais estratégicos para proteger a vila da destruição. O objetivo é sobreviver a todas as hordas de inimigos em duas fases principais: os campos exteriores e os arredores da própria vila.
 
@@ -43,55 +43,72 @@ O jogador assume o papel do "Mestre Estratega" da vila, responsável por gerir o
 
 ### **3. Storyboards**
 
+A sequência abaixo ilustra a jornada visual e interativa do jogador.
+
 #### **Quadro 1: Tela Inicial**
 * **Descrição:** A tela principal onde o jogador inicia a sua jornada. Apresenta as opções para começar a jogar ou verificar o ranking de pontuações.
-![Tela Inicial do Jogo](./images/tela-inicial.png)
+<p align="left">
+  <img src="./images/tela-inicial.png" width="400">
+</p>
 
-**Quadro 2: Início da Fase 1**
-* **Visual:** O mapa da Fase 1 é exibido. A interface mostra a vida da base e o dinheiro inicial. Uma mensagem "Horda 1" aparece no centro do ecrã.
-* **Ação:** A primeira horda de inimigos começa a mover-se pelo caminho.
-![Início da Fase 1](./images/horda-1.png)
+#### **Quadro 2: Tela de Ranking**
+* **Descrição:** Ao clicar no botão "Ranking", o jogo executa uma requisição GET à API backend. Os dados, armazenados numa base de dados MongoDB, são retornados e exibidos na tela, mostrando as melhores pontuações e demonstrando a integração full-stack do projeto.
+<p align="left">
+  <img src="./images/ranking.png" width="400">
+</p>
 
-**Quadro 3: Construção de uma Torre**
-* **Visual:** O jogador clica num local de construção vazio.
-* **Ação:** O dinheiro é debitado, e uma torre de nível 1 é construída no local selecionado.
-![Construção de uma Torre](./images/construindo-torre.gif)
+#### **Quadro 3: Início da Fase 1**
+* **Descrição:** O mapa da Fase 1 é exibido com a interface de jogo (vida, dinheiro). A mensagem "Horda 1" prepara o jogador para a primeira onda de inimigos.
+<p align="left">
+  <img src="./images/horda-1.png" width="400">
+</p>
 
-**Quadro 4: Combate**
-* **Visual:** As torres disparam automaticamente flechas nos inimigos que entram no seu raio de alcance.
-* **Ação:** Inimigos derrotados desaparecem e dão dinheiro ao jogador.
-![Combate](./images/atacando-inimigos.gif)
+#### **Quadro 4: Construção de uma Torre**
+* **Descrição:** Demonstração da mecânica de construção. O jogador clica num local válido, o dinheiro é debitado, e uma torre de nível 1 é construída.
+<p align="left">
+  <img src="./images/construindo-torre.gif" width="400">
+</p>
 
-**Quadro 5: Upgrade de uma Torre**
-* **Visual:** O jogador clica numa torre existente, e uma janela de upgrade aparece, mostrando o custo e a melhoria nos atributos.
-* **Ação:** O jogador confirma o upgrade, o dinheiro é gasto e a torre muda de aparência, tornando-se mais forte.
-![Upgrade de uma Torre](./images/upgrade-na-torre.gif)
+#### **Quadro 5: Combate**
+* **Descrição:** O ciclo de jogo em ação. As torres disparam automaticamente nos inimigos, que, ao serem derrotados, concedem dinheiro ao jogador.
+<p align="left">
+  <img src="./images/atacando-inimigos.gif" width="400">
+</p>
 
-**Quadro 6: Comprando Vida**
-* **Visual:** A barra de vida é incrementada, aumentando a vida do jogador.
-* **Ação:** 
-![Comprando Vida](./images/proxima-fase.gif)
+#### **Quadro 6: Upgrade da Torre**
+* **Descrição:** O jogador clica numa torre para abrir a janela de upgrade. O GIF demonstra tanto um upgrade bem-sucedido quanto a mensagem de aviso por falta de dinheiro.
+<p align="left">
+  <img src="./images/upgrade-na-torre.gif" width="400">
+</p>
 
-**Quadro 7: Vitória na Fase 1**
-* **Visual:** Após derrotar a última horda da fase, uma mensagem de "Fase Concluída!" é exibida.
-* **Ação:** O jogo prepara a transição para a próxima fase.
-![Vitória na Fase 1](./images/proxima-fase.gif)
+#### **Quadro 7: Compra de Vida**
+* **Descrição:** Mecânica estratégica que permite ao jogador gastar dinheiro para recuperar a vida da base, crucial para a sobrevivência em hordas avançadas.
+<p align="left">
+  <img src="./images/comprando-vida.gif" width="400">
+</p>
 
-**Quadro 8: Fim de Jogo (Vitória)**
-* **Visual:** O jogador vence todas as hordas da Fase 2. Uma tela perguntando o nome do jogador aparece, seguindo de uma tela de "GAME WIN".
-* **Ação:** O jogador pode escolher entre "Jogar Novamente" ou "Menu Principal".
-![Fim de Jogo (Vitória)](./images/game-win.png)
+#### **Quadro 8: Transição de Fase**
+* **Descrição:** Ao vencer a Fase 1, uma mensagem de "Fase Concluída!" é exibida, seguida de uma transição suave para a Fase 2, mantendo o dinheiro do jogador.
+<p align="left">
+  <img src="./images/proxima-fase.gif" width="400">
+</p>
 
-**Quadro 8: Fim de Jogo (Derrota)**
-* **Visual:** A vida da base chega a zero. Uma tela perguntando o nome do jogador aparece, seguido de uma tela de "GAME OVER".
-* **Ação:** O jogador pode escolher entre "Jogar Novamente" ou "Menu Principal".
-![Fim de Jogo (Derrota)](./images/game-over.png)
+#### **Quadro 9: Fim de Jogo (Vitória)**
+* **Descrição:** Tela exibida ao completar todas as hordas da última fase. O jogador é solicitado a inserir o seu nome para salvar a sua pontuação no ranking.
+<p align="left">
+  <img src="./images/game-win.png" width="400">
+</p>
+
+#### **Quadro 10: Fim de Jogo (Derrota)**
+* **Descrição:** Tela exibida quando a vida da base chega a zero. O jogo termina, e são apresentadas as opções para jogar novamente ou voltar ao menu principal.
+<p align="left">
+  <img src="./images/game-over.png" width="400">
+</p>
 
 ---
 
 ### **4. Implementação do Cenário e Transição de Cenas**
 
-* **Cenários e Fases:** Foram implementadas duas fases completas (`GameScene.js` e `GameScene2.js`), cada uma com o seu próprio layout de mapa, elementos visuais e caminhos para os inimigos.
-* **Personagens e Elementos:** Os inimigos movimentam-se pelos caminhos pré-definidos em cada fase.
+* **Cenários e Fases:** Foram implementadas duas fases completas (`GameScene.js` e `GameScene2.js`), cada uma com o seu próprio layout de mapa, elementos visuais e múltiplos caminhos para os inimigos.
+* **Personagens e Elementos:** Os inimigos movimentam-se pelos caminhos pré-definidos em cada fase, e as torres são posicionadas pelo jogador.
 * **Transição entre Cenas:** Existe uma transição entre a `GameScene` e a `GameScene2`, ativada após a vitória na primeira fase.
-

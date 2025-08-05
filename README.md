@@ -21,6 +21,3 @@ Num vale isolado, uma vila famosa pelos seus arqueiros é atacada por hordas de 
 Toda a documentação referente às etapas avaliativas do projeto pode ser encontrada nos arquivos abaixo:
 
 * [**1. Game Design Document (GDD)**](./DOCUMENTATION/GAME_DESIGN_DOCUMENT.md)
-
-## 🎮 Link para Jogar
-* [**COLOQUE AQUI O SEU LINK PÚBLICO DO REPL.IT PARA O JOGO**]
