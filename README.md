@@ -7,11 +7,10 @@ Um jogo de Tower Defense desenvolvido com Phaser 3, Node.js e MongoDB, criado co
 ## 📜 Índice
 
 1.  [**Visão Geral do Projeto**](#1-visão-geral-do-projeto)
-2.  [**Links Importantes**](#2-links-importantes)
-3.  [**Roteiro e Narrativa**](#3-roteiro-e-narrativa)
-4.  [**Personagens e Elementos**](#4-personagens-e-elementos)
-5.  [**Storyboards**](#5-storyboards)
-6.  [**Considerações Técnicas**](#6-considerações-técnicas)
+2.  [**Roteiro e Narrativa**](#3-roteiro-e-narrativa)
+3.  [**Personagens e Elementos**](#4-personagens-e-elementos)
+4.  [**Storyboards**](#5-storyboards)
+5.  [**Considerações Técnicas**](#6-considerações-técnicas)
     * [Frontend (Phaser 3)](#frontend-phaser-3)
     * [Backend (API REST)](#backend-api-rest)
     * [Processo de Criação e Créditos](#processo-de-criação-e-ferramentas)
@@ -30,13 +29,7 @@ Um jogo de Tower Defense desenvolvido com Phaser 3, Node.js e MongoDB, criado co
 
 ---
 
-## 2. Links Importantes
-
-* **Link para Jogar:** [Clique aqui](https://59c232e8-abd4-4743-87c1-3e95203f3152-00-117xgmwn9kz9w.picard.replit.dev:8080/) e veja o jogo em funcionamento.
-
----
-
-## 3. Roteiro e Narrativa
+## 2. Roteiro e Narrativa
 
 Num vale isolado e pacífico, reside uma pequena vila medieval cuja única fama vem da sua incomparável habilidade com o arco e flecha. A vida é tranquila, até que, subitamente, as criaturas que habitam as florestas começam a atacar os caminhos que levam à vila, corrompidas por uma magia e desconhecida.
 
@@ -44,7 +37,7 @@ O jogador assume o papel do "Mestre Estrategista" da vila, responsável por geri
 
 ---
 
-## 4. Personagens e Elementos
+## 3. Personagens e Elementos
 
 
 * **Torre de Arqueiros:** A unidade de defesa principal do jogador. A torre pode ser evoluída através de 7 níveis, tornando-se mais poderosa e alterando a sua aparência e o tipo de arqueiro no seu topo.
@@ -62,7 +55,7 @@ O jogador assume o papel do "Mestre Estrategista" da vila, responsável por geri
 
 ---
 
-## 5. Storyboards
+## 4. Storyboards
 
 A sequência abaixo ilustra a jornada visual e interativa do jogador.
 
@@ -128,7 +121,7 @@ A sequência abaixo ilustra a jornada visual e interativa do jogador.
 
 ---
 
-## 6. Considerações Técnicas
+## 5. Considerações Técnicas
 
 ### Frontend (Phaser 3)
 O jogo foi inteiramente desenvolvido com o framework Phaser 3, aproveitando o seu sistema de cenas para modularizar o projeto.
